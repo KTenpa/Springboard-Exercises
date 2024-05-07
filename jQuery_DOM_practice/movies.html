@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rating</title>
+    <link rel="stylesheet" type="text/css" href="movies.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Title Of Form-->
+        <h1>Rate Movies!</h1>
+
+        <!-- Movie Form -->
+        <form id="movie-form">
+            
+            <!-- Movie Title -->
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="form-inputs" required>
+            </div>
+            
+            <!-- Movie Rating -->
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <input type="number" id="rating" class="form-inputs" min="0" max="10" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" id="button" class="btn form-inputs">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <br>
+    
+    <div id="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col" id="title">Title</th>
+                    <th scope="col" id="rating">Rating</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+
+            </tbody>
+        </table>
+    </div> 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="movies.js"></script>
+</body>
+</html>

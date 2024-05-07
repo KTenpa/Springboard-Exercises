@@ -1,0 +1,30 @@
+*{
+    margin: auto;
+    text-align: center;
+}
+
+#movie-form{
+    display: flex;
+    width: 50%;
+}
+
+.form-group{
+    margin: auto;
+    padding: 0;
+}
+
+#button{
+    margin-top: 1.5em;
+}
+
+table{
+    width: 100%;
+}
+
+thead{
+    background-color: aquamarine;
+}
+
+.btn{
+    border-radius: 5px;
+}
